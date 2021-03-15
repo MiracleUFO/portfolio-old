@@ -55,7 +55,7 @@ img {
 header {
 	background: rgba(138,43,226,0.6);
 	background-size:cover;
-	height: 91vh;
+	height: 100vh;
 	color:white;
 	line-height:35px;
 	font-size:10px;
@@ -88,10 +88,9 @@ header .avatarSect {
 }
 .downArrow {
 	position: relative;
-	top: 10px;
 	align-self: center;
 	font-size: 8px;
-	margin-top: 20px;
+	margin-top: 15px;
 	display: flex;
 	align-items: center;
 }
@@ -232,7 +231,7 @@ main:before {
 	background:blueviolet;
 	left:0;
 	right:0;
-	top: 91vh;
+	top: 100vh;
 	clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 	-webkit-clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 }
