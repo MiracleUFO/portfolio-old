@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <title>MiracleU.F.O. | Portfolio</title>
         <script src="https://kit.fontawesome.com/e37765c095.js" crossorigin="anonymous"></script>
     </head>
 
@@ -16,25 +17,28 @@
     		<div class="contact">
                 <a href="mailto:miracleufodiama@gmail.com"><img src="imgs/email-11-24.png" class="socialIcon" alt="Email" title="Drop me a line at my email. I love emails."/></a>
                 <a href="https://github.com/MiracleUFO" target="_blank"><img src="imgs/github-6-24.png" class="socialIcon" alt="GitHub" title="Click to view my GitHub"/></a>
-                <a href="https://www.linkedin.com/in/miracleufodiama/" target="_blank"><img src="imgs/linkedin-24.png" class="socialIcon" title='' alt="Linkedin" title="Click to go to my Linkedin."/></div></a>
+                <a href="https://www.linkedin.com/in/miracleufodiama/" target="_blank"><img src="imgs/linkedin-24.png" class="socialIcon" title='' alt="Linkedin" title="Click to go to my Linkedin."/></a>
+            </div>
 
     		<section class="avatarSect" title="Avatar and name">
     			<div><img src="imgs/me2.jpg" class="avatar" alt="Picture of Miracle Ufodiama"/>
-    			<h1>MIRACLE UFODIAMA</h1>
-    			<h2>WEB DEVELOPER</h2></div>
-    			<p>I help companies &amp brands bring ideas to reality.</p><br/>
-    			<button><a href="mailto:miracleufodiama@gmail.com">Hire Me</a></button>
+    			<h1>MIRACLE U.F.O.</h1>
+    			<h2>Fullstack Developer</h2></div>
+                <p>I help companies &amp brands bring ideas to reality. Genie on the Frontend, you can trust me to do <i>pixel perfect</i> implementations.</p>
+                
+                <div id='button-section'>
+                <button><a href="mailto:miracleufodiama@gmail.com">Hire Me</a></button>
 
                 <a href="#portfolio" class='downArrow' id='downArrow' onclick="document.getElementById('downArrow').classList.toggle('downArrowClicked');">
                   <svg width="29" height="29" xmlns="http://www.w3.org/2000/svg" >
-                        <g transform="translate(1 1)" stroke="white" fill="none" fill-rule="evenodd">
+                        <g transform="translate(1 1)" stroke="pink" fill="none" fill-rule="evenodd">
                             <path stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M9.1 12.012l4.095 4.55 4.095-4.55"></path>
                             <circle stroke-width="1.638" cx="13.195" cy="13.195" r="13.195"></circle>
                         </g>
                     </svg>
                     <p>See my work</p>
                 </a>  
-                
+                </div>
     		</section>
     		
     		<div id="headerText"><div><h1>I'm <span class="pinkText">Miracle,</span></h1>
@@ -51,7 +55,7 @@
     			<img src="imgs/me2.jpg" class="avatar" alt="Picture of Miracle Ufodiama" title="My bombshell face."/>
     			<div id="avatarCont">
     				<h1 title="My name">MIRACLE UFODIAMA</h1>
-    				<h2 title="What I do">WEB DEVELOPER</h2>
+    				<h2 title="What I do">FULLSTACK DEVELOPER</h2>
     			</div>
     		</section>
 
@@ -79,7 +83,7 @@
     	<main >
             <section id="portfolio">
     		  <h1>PORTFOLIO</h1><br/>
-    		  <p>See some of my work and experience below (straight to business, yas.) Unless stated otherwise, all their components were done completely by me, and are arranged chronologically.</p>
+    		  <p>See my work and experience below (straight to business, yas.) Unless stated otherwise, all their components were done completely by me, and are arranged chronologically.</p>
 
     		  <ul id="projects">
                 <li>
@@ -201,7 +205,7 @@
                 </div>
             </section>
 
-            <section id="circularMenu" class="circular-menu">
+            <section id="circularMenu" class="circular-menu-hidden">
                 <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -217,4 +221,11 @@
             </section>
         </main>
     </body>
+    <script>
+        let hide = (e) => {
+            let menu = document.getElementById('circularMenu');
+            window.pageYOffset > 100 ? menu.setAttribute('class', 'circular-menu') : menu.setAttribute('class', 'circular-menu-hidden');
+        }
+        window.addEventListener('scroll', hide, false);
+    </script>
 </html>

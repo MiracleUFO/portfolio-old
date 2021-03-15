@@ -1,6 +1,6 @@
 html,
 body {
-	font-family: 'Nunito', Helvetica;
+	font-family: 'Segoe UI', Helvetica;
 	font-size:2vw;
 	background:white;
 	line-height:20px;
@@ -28,16 +28,15 @@ a:active {
 	color: white;
 }
 button {
-	width: 45%;
-	padding: 10px ;
+	width:75vw;
+	padding: 22px 0 20px;
 	color:white;
-	border-radius: 14px;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	font-weight: 700;
-	background: #FF1493;
+	background-color: #FF1493;
 	border: none;
+	border-radius: 50px;
 	cursor: pointer;
-	transition: font-weight ease 1s;
 }
 .socialIcon {
 	padding-right:10px;
@@ -56,7 +55,7 @@ img {
 header {
 	background: rgba(138,43,226,0.6);
 	background-size:cover;
-	height: 420px;
+	height: 100vh;
 	color:white;
 	line-height:35px;
 	font-size:10px;
@@ -64,17 +63,15 @@ header {
 header .contact {
 	padding: 0;
 	height:40px;
-	background:rgba(1,1,1,.97);
-	position:fixed;
 	width:100%;
 	padding-right: 5px;
-    box-sizing: border-box;
+  box-sizing: border-box;
 	display: flex;
 	justify-content: flex-end;
 	z-index: 5;
 }
 header .avatarSect {
-	padding: 60px 5px 0;
+	padding: 2em 5px 0;
 	text-align:center;
 	display: flex;
 	flex-direction: column;
@@ -96,29 +93,79 @@ header .avatarSect {
 	font-size: 8px;
 	margin-top: 20px;
 	display: flex;
+	align-items: center;
 }
-.downArrowClicked, .downArrow:hover, .downArrow:hover svg g,  {
+.downArrowClicked, .downArrow:hover, .downArrow:hover svg g {
 	color: pink;
 	stroke: pink;
 }
 header .avatarSect h1 {
 	display:inline;
 	font-size:3.5vw;
+	font-family: 'Nunito';
 	color: pink;
 	letter-spacing:1.5px; 
 	position:relative;
 	vertical-align:middle;
 }
 .downArrow p {
-	padding-left: 5px;
-	font-size: small;
+	padding-left: 10px;
+	font-size: medium;
+	font-weight: bold;
+  color: pink;
+  padding-bottom: 1px;
 }
 header .avatarSect h2 {
-	font-size: 6.5vw;
-	font-weight: bolder;
+	font-size: 18vw;
+	font-family: Helvetica;
+  line-height: 72px;
+  padding-top: 4vh;
+  letter-spacing: -3px;
 }
 header .avatarSect > p {
-	font-size:4vw;
+	font-size:5.5vw;
+	font-family: Helvetica;
+	line-height: 32px;
+	padding: 0 0.7em 0;
+}
+#button-section {
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (min-width: 360px) {
+	header .avatarSect {
+		padding: 3.5em 5px 0;
+	}
+	header .avatarSect h2 {
+		padding-top: 4vh;
+		padding-bottom: 5px;
+		line-height: 75px;
+	}
+	#button-section {
+		position: absolute;
+		left: 12%;
+		top: 70vh;
+	}
+}
+
+@media screen and (min-height: 750px) {
+	header {
+		height: 90vh;
+	}
+	header .avatarSect h2 {
+		padding-bottom: 15px;
+	}
+
+	#button-section {
+		position: relative;
+		left: auto;
+		top: 7vh;
+	}
+}
+@media screen and (min-width: 500px) {
+	header .avatarSect h2 {
+    font-size: 11vw;
+	}
 }
 aside {
 	display:none;
@@ -164,12 +211,12 @@ aside .avatarSect {
 	padding-bottom: 40px;
 }
 .avatarSect {
-	text-align:center;
+	text-align: center;
 }
 .avatar {
-	border-radius:50%;
-	width:15%;
-	vertical-align:middle;
+	border-radius: 50%;
+	width: 12%;
+	vertical-align: middle;
 }
 
 #avatarCont {
@@ -180,17 +227,17 @@ main {
 }
 main:before {
 	content:"";
-	height:2px;
+	height:3px;
 	position:absolute;
 	background:blueviolet;
 	left:0;
 	right:0;
-	top: 420px;
+	top: 100vh;
 	clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 	-webkit-clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 }
 main h1, main h2, main h3 {
-	font-weight: 400;
+	font-weight:400;
 }
 main h1 {
 	font-size: 6vw;
@@ -335,7 +382,7 @@ main p {
 }
 }
 
-@media screen and (min-width:850px) {
+@media screen and (min-width:750px) {
 button {
 	width: 150px;
 }
@@ -549,3 +596,12 @@ main:before {
 	top: 25%;
 	font-size: 2.2em;
 }
+.circular-menu-hidden {
+	display: none;
+}
+@media screen and (min-height: 750px) {
+	main:before {
+	top: 90vh;
+	}
+}
+
