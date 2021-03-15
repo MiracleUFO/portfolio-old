@@ -29,7 +29,7 @@ a:active {
 }
 button {
 	width:75vw;
-	padding: 22px 0 20px;
+	padding: 3vh 0 3vh;
 	color:white;
 	font-size: 1.6em;
 	font-weight: 700;
@@ -84,7 +84,7 @@ header .avatarSect {
 .avatarSect button {
 	align-self: center;
 	position: relative;
-	top: 15px;
+	top: 2vh;
 }
 .downArrow {
 	position: relative;
