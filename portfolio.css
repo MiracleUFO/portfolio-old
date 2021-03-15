@@ -71,7 +71,7 @@ header .contact {
 	z-index: 5;
 }
 header .avatarSect {
-	padding: 2em 5px 0;
+	padding: 3.5vh 5px 0;
 	text-align:center;
 	display: flex;
 	flex-direction: column;
@@ -134,7 +134,7 @@ header .avatarSect > p {
 }
 @media screen and (min-width: 360px) {
 	header .avatarSect {
-		padding: 3.5em 5px 0;
+		padding: 4vh 5px 0;
 	}
 	header .avatarSect h2 {
 		padding-top: 4vh;
