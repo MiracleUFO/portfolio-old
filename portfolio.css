@@ -118,12 +118,12 @@ header .avatarSect h1 {
 header .avatarSect h2 {
 	font-size: 18vw;
 	font-family: Helvetica;
-  line-height: 72px;
+  line-height: 10vh;
   padding-top: 4vh;
   letter-spacing: -3px;
 }
 header .avatarSect > p {
-	font-size:5.5vw;
+	font-size: 4.5vw;
 	font-family: Helvetica;
 	line-height: 32px;
 	padding: 0 0.7em 0;
