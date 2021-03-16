@@ -86,7 +86,7 @@ header .avatarSect {
 	position: relative;
 	top: 2vh;
 }
-.downArrow {
+#downArrow {
 	position: relative;
 	align-self: center;
 	font-size: 8px;
@@ -94,9 +94,12 @@ header .avatarSect {
 	display: flex;
 	align-items: center;
 }
-.downArrowClicked, .downArrow:hover, .downArrow:hover svg g {
+.downArrowClicked, #downArrow:hover, #downArrow:hover svg g {
 	color: pink;
 	stroke: pink;
+}
+.link-pulse {
+	top: 5px;
 }
 header .avatarSect h1 {
 	display:inline;
@@ -107,7 +110,7 @@ header .avatarSect h1 {
 	position:relative;
 	vertical-align:middle;
 }
-.downArrow p {
+#downArrow p {
 	padding-left: 10px;
 	font-size: medium;
 	font-weight: bold;

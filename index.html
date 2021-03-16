@@ -29,7 +29,7 @@
                 <div id='button-section'>
                 <button><a href="mailto:miracleufodiama@gmail.com">Hire Me</a></button>
 
-                <a href="#portfolio" class='downArrow' id='downArrow' onclick="document.getElementById('downArrow').classList.toggle('downArrowClicked');">
+                <a href="#portfolio" id='downArrow' class='link-norm' onclick="document.getElementById('downArrow').classList.toggle('downArrowClicked');">
                   <svg width="29" height="29" xmlns="http://www.w3.org/2000/svg" >
                         <g transform="translate(1 1)" stroke="pink" fill="none" fill-rule="evenodd">
                             <path stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M9.1 12.012l4.095 4.55 4.095-4.55"></path>
@@ -227,5 +227,11 @@
             window.pageYOffset > 100 ? menu.setAttribute('class', 'circular-menu') : menu.setAttribute('class', 'circular-menu-hidden');
         }
         window.addEventListener('scroll', hide, false);
+
+        let buttonPulse = () => {
+            let downArrow = document.getElementById('downArrow');
+            downArrow.getAttribute('class') != 'link-norm' ? downArrow.setAttribute('class', 'link-norm') : downArrow.setAttribute('class', 'link-pulse');
+        }
+        setInterval(buttonPulse, 2000);
     </script>
 </html>
