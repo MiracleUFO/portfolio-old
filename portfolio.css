@@ -141,6 +141,12 @@ header .avatarSect > p {
 	display: flex;
 	flex-direction: column;
 }
+#button-section {
+		position: absolute;
+		left: 12%;
+		top: 65vh;
+}
+
 @media screen and (min-width: 360px) {
 	header .avatarSect {
 		padding: 4vh 5px 0;
@@ -148,12 +154,7 @@ header .avatarSect > p {
 	header .avatarSect h2 {
 		padding-bottom: 5px;
 		line-height: 75px;
-	}
-	#button-section {
-		position: absolute;
-		left: 12%;
-		top: 70vh;
-	}
+	}	
 }
 
 @media screen and (min-height: 750px) {
