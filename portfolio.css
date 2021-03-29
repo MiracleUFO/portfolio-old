@@ -51,7 +51,6 @@ img {
 	width:100%;
 }
 
-
 header {
 	background: rgba(138,43,226,0.6);
 	background-size:cover;
@@ -84,7 +83,7 @@ header .avatarSect {
 .avatarSect button {
 	align-self: center;
 	position: relative;
-	top: 2vh;
+	top: 2.5vh;
 }
 #downArrow {
 	position: relative;
