@@ -55,7 +55,6 @@ img {
 header {
 	background: rgba(138,43,226,0.6);
 	background-size:cover;
-  max-height: -webkit-fill-available;
 	color:white;
 	height: 95vh;
 	min-height: -webkit-fill-available;
