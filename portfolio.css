@@ -55,7 +55,7 @@ header {
 	background: rgba(138,43,226,0.6);
 	background-size:cover;
 	color:white;
-	height: 90vh;
+	height: 92vh;
 	min-height: -webkit-fill-available;
 	line-height:35px;
 	font-size:10px;
@@ -158,7 +158,7 @@ header .avatarSect > p {
 
 @media screen and (min-height: 750px) {
 	header {
-		height: 90vh;
+		height: 92vh;
 	}
 	header .avatarSect h2 {
 		padding-bottom: 15px;
@@ -238,7 +238,7 @@ main:before {
 	background:blueviolet;
 	left:0;
 	right:0;
-	top: 90vh;
+	top: 92vh;
 	clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 	-webkit-clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 }
@@ -303,8 +303,6 @@ main a {
 .contact h1 {
 	padding-bottom: 20px;
 }
-
-
 #cruise {
 	height: 50px;
 }
@@ -607,7 +605,7 @@ main:before {
 }
 @media screen and (min-height: 750px) {
 	main:before {
-	top: 90vh;
+	top: 92vh;
 	}
 }
 
