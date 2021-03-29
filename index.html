@@ -222,8 +222,6 @@
         </main>
     </body>
     <script>
-        let height = window.innerHeight;
-        document.getElementsByTagName('header')[0].style.height = height;
         let hide = (e) => {
             let menu = document.getElementById('circularMenu');
             window.pageYOffset > 100 ? menu.setAttribute('class', 'circular-menu') : menu.setAttribute('class', 'circular-menu-hidden');
