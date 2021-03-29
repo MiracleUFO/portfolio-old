@@ -152,7 +152,7 @@ header .avatarSect > p {
 	#button-section {
 		position: absolute;
 		left: 12%;
-		top: 65vh;
+		top: 70vh;
 	}
 }
 
@@ -165,7 +165,7 @@ header .avatarSect > p {
 	}
 
 	#button-section {
-		top: 65vh;
+		top: 70vh;
 	}
 }
 @media screen and (min-width: 500px) {
