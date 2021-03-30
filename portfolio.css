@@ -43,9 +43,9 @@ button {
 	width: 1.6em;
 }
 @media screen and (max-width: 250px) {
-button {
-	width: 150px;
-}
+	button {
+		width: 150px;
+	}
 }
 img {
 	width:100%;
@@ -55,7 +55,7 @@ header {
 	background: rgba(138,43,226,0.6);
 	background-size:cover;
 	color:white;
-	height: 92vh;
+	height: 88vh;
 	min-height: -webkit-fill-available;
 	line-height:35px;
 	font-size:10px;
@@ -139,6 +139,7 @@ header .avatarSect > p {
 #button-section {
 	display: flex;
 	flex-direction: column;
+	padding-top: 2vh;
 }
 #button-section {
 		position: absolute;
@@ -238,7 +239,7 @@ main:before {
 	background:blueviolet;
 	left:0;
 	right:0;
-	top: 92vh;
+	top: 88vh;
 	clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 	-webkit-clip-path: polygon(0% 0%, 5% 60%, 10% 0%, 15% 60%, 20% 0%, 25% 60%, 30% 0%, 35% 60%, 40% 0%, 45% 60%, 50% 0%, 55% 60%, 60% 0%, 65% 60%, 70% 0%, 75% 60%, 80% 0%, 85% 60%, 90% 0%, 95% 60%, 100% 0%);
 }
@@ -605,7 +606,7 @@ main:before {
 }
 @media screen and (min-height: 750px) {
 	main:before {
-	top: 92vh;
+	top: 90.5vh;
 	}
 }
 
