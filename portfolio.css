@@ -53,12 +53,12 @@ img {
 
 header {
 	background: rgba(138,43,226,0.6);
-	background-size:cover;
-	color:white;
+	background-size: cover;
+	color: white;
 	height: 88vh;
 	min-height: -webkit-fill-available;
-	line-height:35px;
-	font-size:10px;
+	line-height: 35px;
+	font-size: 10px;
 }
 header .contact {
 	padding: 0;
@@ -110,7 +110,7 @@ header .avatarSect {
 header .avatarSect h1 {
 	display:inline;
 	font-size:3.5vw;
-	font-family: 'Nunito';
+	font-family: 'Montserrat';
 	color: pink;
 	letter-spacing:1.5px; 
 	position:relative;
@@ -153,7 +153,7 @@ header .avatarSect > p {
 	}
 	header .avatarSect h2 {
 		padding-bottom: 5px;
-		line-height: 75px;
+		line-height: 70px;
 	}	
 }
 
