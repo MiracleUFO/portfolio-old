@@ -104,7 +104,7 @@ header .avatarSect {
 }
 
 .link-pulse {
-	top: 7px;
+	top: 6.5px;
 	transition: top 2s ease-in;
 }
 header .avatarSect h1 {
@@ -126,7 +126,7 @@ header .avatarSect h1 {
 header .avatarSect h2 {
 	font-size: 18vw;
 	font-family: Helvetica;
-  line-height: 10vh;
+  line-height: 9vh;
   padding-top: 2vh;
   letter-spacing: -3px;
 }
@@ -139,7 +139,7 @@ header .avatarSect > p {
 #button-section {
 	display: flex;
 	flex-direction: column;
-	padding-top: 2vh;
+	padding-top: 2.5vh;
 }
 #button-section {
 		position: absolute;
