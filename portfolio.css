@@ -92,7 +92,7 @@ header .avatarSect {
 	position: relative;
 	align-self: center;
 	font-size: 8px;
-	margin-top: 15px;
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 }
@@ -142,14 +142,12 @@ header .avatarSect > p {
 	top: -7px;
 }
 #button-section {
+	position: absolute;
+	left: 12%;
+	top: 65vh;
 	display: flex;
 	flex-direction: column;
-	padding-top: 2vh;
-}
-#button-section {
-		position: absolute;
-		left: 12%;
-		top: 65vh;
+	padding-top: 1.5vh;
 }
 
 @media screen and (min-width: 360px) {
