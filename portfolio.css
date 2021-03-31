@@ -70,6 +70,9 @@ header .contact {
 	justify-content: flex-end;
 	z-index: 5;
 }
+header .contact a {
+	padding-left: 3px;
+}
 header .avatarSect {
 	text-align:center;
 	display: flex;
@@ -135,11 +138,13 @@ header .avatarSect > p {
 	font-family: Helvetica;
 	line-height: 32px;
 	padding: 0 0.7em 0;
+	position: relative;
+	top: -7px;
 }
 #button-section {
 	display: flex;
 	flex-direction: column;
-	padding-top: 2.5vh;
+	padding-top: 2vh;
 }
 #button-section {
 		position: absolute;
@@ -258,8 +263,8 @@ main h3 {
 	font-style: italic;
 }
 main p {
-	font-size: 3.5vw;
-	padding-bottom: 10px;
+	font-size: 4.5vw;
+  line-height: 6vw;
 }
 main a {
 	color: #FF1493;
