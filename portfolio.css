@@ -258,12 +258,19 @@ main h2 {
 	padding-bottom: 6px;
 }
 main h3 {
-	font-size: 3.5vw;
+	font-size: 3.7vw;
 	color: #696969;
+	padding-bottom: 7px;
+}
+
+@media screen and (min-width: 750px) {
+	main h3 {
+		padding-bottom: 12px;
+	}
 }
 main p {
-	font-size: 4vw;
-  line-height: 7vw;
+	font-size: 4.7vw;
+  line-height: 7.5vw;
 }
 main p b {
 	font-weight: 600;
@@ -392,7 +399,7 @@ main a {
 	display: none
 }
 .meOnShades {
-	padding-top: 5px;
+	padding-top: 15px;
 	width: 90%;
 	display: block;
 	margin: 0 auto;
@@ -670,7 +677,9 @@ main p {
 }
 
 #tools {
-	width: 55%
+	position: relative;
+	bottom: 45px;
+	padding: 0;
 }
 
 .splide__slide {
@@ -684,8 +693,11 @@ main p {
 .splide__slide img {
 	display: block;
 	margin: 0 auto;
-	width: 80%;
-	min-height: 190px;
+	width: 70%;
+}
+
+#toolsImg {
+	width: 55%;
 }
 
 @media screen and (max-width: 750px) {
@@ -696,12 +708,16 @@ main p {
 	}	
 	#card-slider h1 {
 		font-style: italic;
-		font-size: 6.9vw;
+		font-size: 6vw;
 		padding: 20px 0 5px;
 	}
 
 	.none {
 		display: none;
+	}
+
+	.splide__slide img, #toolsImg {
+		width: 80%;
 	}
 }
 
