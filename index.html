@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="portfolio.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css">        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
@@ -14,6 +15,27 @@
     </head>
 
     <body>
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {
+	            new Splide( '#card-slider', {
+                    height: 700,
+                    easing: 'ease',
+                    autoplay: true,
+                    interval: 3000,
+                    rewind: true,
+		            perPage    : 1,
+                    breakpoints: {
+			            750: {
+                        interval: 3500,
+                        width: '90vw',
+                        perPage: 1,
+                        height: 270,
+			            }
+		            }
+	            }).mount();
+            });
+        </script>
+
     	<header>
     		<div class="contact">
                 <a href="mailto:miracleufodiama@gmail.com"><img src="imgs/email-11-24.png" class="socialIcon" alt="Email" title="Drop me a line at my email. I love emails."/></a>
@@ -81,61 +103,109 @@
     		</section>
     	</aside>
 
-    	<main >
+    	<main>
+            <div id="card-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="imgs/code.png">
+                            <h1>CODE</h1>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="imgs/mern.png">
+                            <h1>FULLSTACK <span class="none">WEB</span> APPS</h1>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="imgs/tools.png" id='tools'>
+                            <h1><span class="none">WEB</span>SITE MAINTENANCE</h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <section id="portfolio">
     		  <h1>PORTFOLIO</h1><br/>
     		  <p>See some of my work below (straight to business, yas.) Unless stated otherwise, all their components were done by me, and are arranged chronologically.</p>
 
     		  <ul id="projects">
+                <li class="liFlex">
+                    <div>
+                        <h2>Udunkulu</h2><h3>Explore the Nigerian sound</h3><br/>
+                        <p>A fully functional music streaming platform aimed at promoting Nigerian acts, genres and their art.</p>
+    				    <p>I implemented the frontend of this app with a remote Agile team of Nigerian designers and developers from a Figma design.</p>
+                        <p><a class='liveProject' href='https://udunkulu-app.netlify.app/' target="_blank">@https://udunkulu-app.netlify.app/</a> </p>
+                        <br/>
+                        <p><b>Technologies used: React | CSS3 | JavaScript/ES6</b></p>
+                    </div>
+                    <img src='imgs/udunkulu.gif' alt='Udunkulu tour clip' id='udunkulu' />
+                </li>
+
+                <li class="liFlex phone-view">
+                    <div>
+                        <h2>Musepic</h2><h3>Grayscale your pictures</h3><br/>
+    				    <p>Responsive Web app I built to easily upload and convert pictures to black and white.</p>
+                        <p></p>
+                        <p><a class='liveProject' href='https://musepic.netlify.app/' target="_blank">@https://musepic.netlify.app</a> </p>
+                        <br/>
+                        <p><b>Technologies used: React | CSS3 | JavaScript/ES6 | Cloudinary | NodeJS/Express</b></p>
+                    </div>
+                    <img src='imgs/musepic.png' alt='Musepic home page clip'/>
+                </li>
+
     			<li class="liFlex">
                     <div>
                         <h2>Memoirs</h2><h3>Humanizing stats of police brutality in Nigeria.</h3><br/>
-    				    <p>As part of an Agile team of Nigerian techies spread all over the country, I implemented the frontend of this app from a Product Requirements Document and Figma design done by our design team.</p>
+    				    <p>As part of an Agile team of Nigerian techies spread all over the country, I implemented the frontend of this app from a Figma design done by our design team.</p>
                         <p>This is an ongoing project. It allows users learn about the lives of people before they were murdered by SARS operatives in Nigeria using text and other media.</p>
                         <p>Did I mention it's completely responsive? All projects I work on are. :)</p>
-                        <p>See it live: <a class='liveProject'  href='https://memoirs4sarsvictims.netlify.app/'>https://bit.ly/memoirs4sarsvictims</a> </p>
-    				    <p><b>Technologies used: React | CSS3</b></p>
+                        <p><a class='liveProject' href='https://memoirs4sarsvictims.netlify.app/' target="_blank">@https://bit.ly/memoirs4sarsvictims</a> </p>
+                        <br/>
+                        <p><b>Technologies used: React | CSS3</b></p>
                     </div>
-                    <img src='imgs/MemoirCapture.png' alt='Memoir home page clip'/>
+                    <img src='imgs/memoirs.png' alt='Memoir home page clip'/>
                 </li>
 
-    			<li class="liFlex">
+    			<li class="liFlex phone-view">
                     <div>
-                        <h2>Learnable Clone</h2><h3>Learn, get paid, work with the most amazing people and become world class.</h3><br/>
-                        <p>In the role of frontend intern at Genesys Tech Hub I implemented a React app for the hub's landing page in 7 beautiful components that paint a vibrant picture of what it is like to work at the hub.</p>
-                        <p>Woah, that's a lot, still responsive though? Yes, still responsive and <a href="https://www.nordicclick.com/blog/5-reasons-to-enhance-web-accessibility/"><b>accessible.</b></a></p>
-                        <p>See it live: <a class='liveProject' href='https://miracleufo-learnable-clone.netlify.app/'>https://bit.ly/learnable-clone</a> </p>
-                        <p><b>Technologies used: React | CSS3 | ES6</b></p>
+                        <h2>Learnable</h2><h3>Learn, get paid, work with the most amazing people and become world class.</h3><br/>
+                        <p>In the role of frontend intern at Genesys Tech Hub I implemented a React app for the hub's internship program in 7 beautifully designed components that paint a vibrant picture of what it is like to work at the hub.</p>
+                        <p>Woah, that's a lot, still responsive though? Yes, mobile responsive and <a href="https://www.nordicclick.com/blog/5-reasons-to-enhance-web-accessibility/">WCAG compliant.</a></p>
+                        <p><a class='liveProject' href='https://miracleufo-learnable-clone.netlify.app/' target="_blank">@https://bit.ly/learnable-clone</a> </p>
+                        <br/>
+                        <p><b>Technologies used: React | CSS3 </b></p>
                     </div>
-                    <img src='imgs/learnableCapture.jpg' alt='Learnable home page clip'/>
+                    <img src='imgs/learnable.png' alt='Learnable home page clip'/>
                 </li>
 
-    			<li>
+    			<li class="liFlex2">
                     <div>
                         <h2>Lyncanthrope's Log</h2><h3>Find out why stuff keeps happening to you.</h3><br/>
                         <p>This is a fun JavaScript console project I created to help isolate the cause of some recurrring malady, in this case, turning into a werewolf (seriously though, some of us suffer from this. But it can be configured to find out the cause of anything, like why you suddenly started forgetting your laptop charger at the damn office.)</p>
                         <p>It allows the user log in their daily events for two weeks and gives a report of the likely cause of what ails them.</p>
-                        <p>See it live: <a class='liveProject' href='https://repl.it/@MiracleUFO/LycanthropesLog-1#index.js'>https://bit.ly/lycanthropes-log</a> </p>
-                        <p><b>Technologies used: ES6 | Nodejs</b></p>
+                        <p><a class='liveProject' href='https://repl.it/@MiracleUFO/LycanthropesLog-1#index.js'>@https://bit.ly/lycanthropes-log</a> </p>
+                        <br/>
+                        <p><b>Technologies used: JavaScript/ES6</b></p>
                     </div>
                 </li>
 
-    			<li>
+    			<li class="liFlex2">
                     <div>
                         <h2>Library Tracker</h2><br/>
                         <p>Not the most unique name, a helpful tool though.</p>
                         <p>This manages a library's inventory. It allows a user to and reacts when a user borrows books, returns books and/or donates books to the library.</p>
-                        <p>See it live: <a class='liveProject' href='https://repl.it/@MiracleUFO/StoreTrackingSystemUI#index.js'>https://bit.ly/library-tracking-sys</a> </p>
-                        <p><b>Technologies used: ES6 | Nodejs </b></p>
+                        <p><a class='liveProject' href='https://repl.it/@MiracleUFO/StoreTrackingSystemUI#index.js'>@https://bit.ly/library-tracking-sys</a> </p>
+                        <br/>
+                        <p><b>Technologies used: JavaScript/ES6</b></p>
                     </div>
                 </li>
 
-                <li>
+                <li class="liFlex2">
                     <div>
                         <h2>The Poll</h2><h3>Make truly random moves...</h3><br/>
                         <p>This is a simple web app that makes it easier to make decisons if you're sometimes indecisive when there are several equally good options on your table(I'm talking to you if you're nodding your head.) It takes the decision from your hands and makes it for you and shows you how many times you've asked a particular question already.</p>
-                        <p>See it live: <a class='liveProject' href='https://decisionmaker-miracleufo.netlify.app/'>https://bit.ly/the-poll</a> </p>
-                        <p><b>Technologies used: React | CSS3 | JavaScript</b></p>
+                        <p><a class='liveProject' href='https://decisionmaker-miracleufo.netlify.app/'>@https://bit.ly/the-poll</a> </p>
+                        <br/>
+                        <p><b>Technologies used: React | CSS3 | JavaScript/ES6</b></p>
                     </div>
                 </li>	
     		 </ul><br/>
@@ -157,10 +227,12 @@
             <section id="contact" class="contact">
                 <h1>CONTACT ME</h1>
                 <p>I'm available for hire, and any pretty cool projects you want to work on.</p>
-                <p>Email: <a href="mailto:miracleufodiama@gmail.com">hi@miracleufodiama</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/miracleufodiama/">miracleufodiama</a></p>
-                <p>GitHub: <a href="https://github.com/MiracleUFO">MiracleUFO</a></p>
-                <p>Twitter: <a href="https://twitter.com/MiracleUfodiama">@miracleufodiama</a></p>
+                <div>
+                    <p><a href="mailto:miracleufodiama@gmail.com"><i class="fas fa-envelope menu-item"></i>hi@miracleufodiama</a></p>
+                    <p><a href="https://twitter.com/MiracleUfodiama" target="_blank"><i class="fab fa-twitter menu-item"></i>@miracleufodiama</a></p>
+                    <p><a href="https://www.linkedin.com/in/miracleufodiama/" target="_blank"><i class="fab fa-linkedin menu-item"></i>miracleufodiama</a></p>
+                    <p><a href="https://github.com/MiracleUFO" target="_blank"><i class="fab fa-github-alt menu-item"></i>MiracleUFO</a></p>
+                </div>
             </section>
 
             <section id="cruise"></section>

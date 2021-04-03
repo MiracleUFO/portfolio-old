@@ -4,6 +4,7 @@ body {
 	font-size:2vw;
 	background:white;
 	line-height:20px;
+	overflow-x:hidden;
 	box-sizing:border-box;
 	background:url('imgs/bg.jpg') no-repeat left center;
 	background-size:cover;
@@ -257,40 +258,68 @@ main h2 {
 	padding-bottom: 6px;
 }
 main h3 {
-	font-size: 4vw;
-	font-style: italic;
+	font-size: 3.5vw;
+	color: #696969;
 }
 main p {
 	font-size: 4vw;
   line-height: 7vw;
 }
+main p b {
+	font-weight: 600;
+}
 main a {
 	color: #FF1493;
 }
 .liveProject {
-	text-decoration: underline;
+	font-weight: 500;
 }
 #portfolio {
-	padding: 20px 7% 0;
+	padding: 60px 7% 0;
 }
 #portfolio ul {
 	list-style-type: none;
 }
 #portfolio li {
-	padding:30px 0;
+	padding: 30px 0;
 }
 #portfolio h1 {
 	padding-top: 55px;
 }
-.liFlex > img {
+.liFlex > img, .phone-view > img {
 	padding: 10px 0 20px;
+	display: block;
+	margin: 10px auto 0;
 	height: 100%;
+}
+.phone-view > img {
+	width: 80%;
 }
 #projects {
 	padding:0px 0 25px;
 }
 .contact {
-	padding: 50px 5% 0;
+	padding: 50px 3% 0;
+	text-align: center;
+	vertical-align: center;
+	font-weight: 600;
+}
+.contact .menu-item {
+	padding-right: 6px;
+	font-size: 4.5vw;
+}
+@media screen and (min-width: 750px) {
+	#udunkulu {
+		width: 55%;
+	}
+	.contact {
+		padding: 50px 5% 0;
+		text-align: left;
+	}
+	.contact .menu-item {
+		padding-right: 9px;
+		font-size: 18px;
+	}
 }
 .contact .socialIcon {
 	padding-top: 12px
@@ -383,9 +412,9 @@ main h2 {
 	font-size: 30px;
 }
 main h3 {
-	font-size: 18px;
+	padding-top: 2px;
 }
-main p {
+main p, main h3 {
 	font-size: 16px;
 }
 }
@@ -471,23 +500,34 @@ main:before {
 	margin-left:22%;
 	top: 100vh;
 }
+main p {
+	line-height: 2.7vw;
+}
 #portfolio {
-	padding: 0 7% 0;
+	padding: 0 5% 0;
 }
-.liFlex {
+.liFlex, .liFlex2 {
 	display: flex;
+	margin: 0 2%;
 	justify-content: space-between;
+	align-items: center;
 }
-.liFlex > img {
-	border-bottom: 0.5px solid rgba(218,112,214,0.4);
-	width: 36%;
+.liFlex > img, .phone-view > img {
+	width: 30%;
+	margin-top: 0;
 }
 .liFlex div {
-	width: 60%;
+	width: 49%;
+	margin: 0;
+	position: relative;
+	bottom: 30px;
 }
 #helpHow ul {
 	list-style-type: none;
 	padding: 0;
+}
+#helpHow ul li {
+	padding-bottom: 10px;
 }
 .meOnShades {
 	width: 55%;
@@ -564,7 +604,8 @@ main:before {
   right: .2em;
   z-index: -1;
   display: block;
-  text-decoration: none;
+	text-decoration: none;
+	padding: 0;
   color: hsl(0, 0%, 100%);
   font-size: 1em;
   width: 4.5em;
@@ -607,9 +648,58 @@ main:before {
 .circular-menu-hidden {
 	display: none;
 }
-@media screen and (min-height: 750px) {
+@media screen and (min-height: 750px) and (max-width: 750px) {
 	main:before {
-	top: 90.5vh;
+		top: 92vh;
+	}
+}
+
+#card-slider {
+	position: relative;
+	top: 50px;
+	width: 80vw;
+	margin: 0 auto 40px;
+	background: white;
+	text-align: center;
+	color: rgba(138,43,226,0.7);
+}
+
+#card-slider h1 {
+	font-weight: 600;
+}
+
+#tools {
+	width: 55%
+}
+
+.splide__slide {
+	margin-right: 2% !important;
+	padding: 12px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.splide__slide img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+@media screen and (max-width: 750px) {
+	#card-slider {
+		background: rgba(138,43,226,0.2);
+		border-radius: 20px;
+		margin-bottom: 0px;
+	}	
+	#card-slider h1 {
+		font-style: italic;
+		font-size: 6.9vw;
+		padding: 20px 0 5px;
+	}
+
+	.none {
+		display: none;
 	}
 }
 
