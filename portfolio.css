@@ -269,7 +269,7 @@ main h3 {
 	}
 }
 main p {
-	font-size: 4.7vw;
+	font-size: 4.6vw;
   line-height: 7.5vw;
 }
 main p b {
@@ -394,6 +394,7 @@ main a {
 	background: darkorchid;
 	padding-top: 12px;
 	padding-bottom: 60px;
+	text-align: center;
 }
 .flex > div {
 	display: none
