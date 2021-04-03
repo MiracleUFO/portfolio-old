@@ -448,7 +448,7 @@ button {
 header {
 	margin-left:22%;
 	height:100vh;
-	background: rgba(100,43,215,0.8);
+	background: rgba(100,43,215,0.8) url('imgs/ship.webp') no-repeat 40vw -20px;
 }
 .socialIcon {
 	padding-right:5px;
