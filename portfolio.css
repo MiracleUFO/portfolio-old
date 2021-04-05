@@ -119,6 +119,7 @@ header .avatarSect h1 {
 	letter-spacing:1.5px; 
 	position:relative;
 	vertical-align:middle;
+	right: 4%;
 }
 #downArrow p {
 	padding-left: 10px;
@@ -228,6 +229,8 @@ aside .avatarSect {
 	border-radius: 50%;
 	width: 12%;
 	vertical-align: middle;
+	position: relative;
+	right: 5%;
 }
 
 #avatarCont {
