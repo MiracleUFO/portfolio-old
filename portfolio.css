@@ -700,6 +700,22 @@ main p {
 	width: 70%;
 }
 
+.splide__arrow {
+	background: #ddd;
+}
+
+.splide__arrow {
+	background: #aaa;
+}
+
+.splide__arrow svg {
+	fill: mediumorchid;
+}
+
+.splide__arrow svg:hover {
+	fill: darkorchid;
+}
+
 #toolsImg {
 	width: 55%;
 }
