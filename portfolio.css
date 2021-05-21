@@ -78,6 +78,7 @@ header .avatarSect {
 	text-align:center;
 	display: flex;
 	flex-direction: column;
+	padding: 8vh 5px 0;
 }
 #headerText {
 	display:none;
