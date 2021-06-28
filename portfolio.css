@@ -98,7 +98,7 @@ header .avatarSect {
 	display: flex;
 	align-items: center;
 }
-.downArrowClicked, #downArrow:hover, #downArrow:hover svg g {
+#downArrow:hover, #downArrow:hover svg g {
 	color: pink;
 	stroke: pink;
 }
