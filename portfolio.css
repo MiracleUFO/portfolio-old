@@ -1,13 +1,13 @@
 html,
 body {
 	font-family: 'Segoe UI', Helvetica;
-	font-size:2vw;
-	background:white;
-	line-height:20px;
-	overflow-x:hidden;
-	box-sizing:border-box;
-	background:url('imgs/bg.jpg') no-repeat left center;
-	background-size:cover;
+	font-size: 2vw;
+	background: white;
+	line-height: 20px;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	background: url('imgs/bg.jpg') no-repeat left center;
+	background-size: cover;
 }
 * { 
 	text-decoration:none;
@@ -29,9 +29,9 @@ a:active {
 	color: white;
 }
 button {
-	width:75vw;
+	width: 75vw;
 	padding: 3vh 0 3vh;
-	color:white;
+	color: white;
 	font-size: 1.6em;
 	font-weight: 700;
 	background-color: #FF1493;
@@ -670,7 +670,7 @@ main p {
 #card-slider {
 	position: relative;
 	top: 50px;
-	width: 80vw;
+	width: 75vw;
 	margin: 0 auto 40px;
 	background: white;
 	text-align: center;
@@ -702,11 +702,8 @@ main p {
 }
 
 .splide__arrow {
-	background: #ddd;
-}
-
-.splide__arrow {
-	background: #aaa;
+	font-size: 1.2em;
+	background: #ddd !important;
 }
 
 .splide__arrow svg {
@@ -723,6 +720,7 @@ main p {
 
 @media screen and (max-width: 750px) {
 	#card-slider {
+		width: 80vw;
 		background: rgba(138,43,226,0.2);
 		border-radius: 20px;
 		margin-bottom: 0px;
